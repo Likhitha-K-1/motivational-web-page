@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="home.css">
+    <title>Motivate Yourself</title>
+</head>
+<body>
+    <div class="display">
+        <div class="smallmenu"></div>
+        <video src="images/video.mp4" muted autoplay loop></video>
+        <div class="padding">
+            <div class="toggle"></div>
+            <div class="header">
+                <h1>Motivation</h1>
+            </div>
+            <div class="text">
+                <h2>Perseverance is the <br>key to success</h2>
+                <h3>Keep the fire in you burning</h3>
+                <p>Motivation and perseverance is the key to achiving success. When you’re motivated, you have a desire to change your life. Motivation pushes you towards your goal because of a desire for change. This page helps you keep yourself motivated.</p>
+                <div class="explore"><a href="#">explore</a></div>
+            </div>
+            <div class="socialmedia">
+                <a href="#"><img src="images/facebook.png"></a>
+                <a href="#"><img src="images/instagram.png"></a>
+                <a href="#"><img src="images/twitter.png"></a>
+                <a href="#"><img src="images/youtube.png"></a>
+            </div>
+        </div>
+    </div>
+    <div class="menu">
+        <ul>
+            <li><a href ="#">Home</a></li>
+            <li><a href="#">Quotes</a></li>
+            <li><a href="#">Videos</a></li>
+            <li><a href="#">Images</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+</body>
+
+<script>
+    const toggle=document.querySelector('.toggle');
+    const display=document.querySelector('.display');
+    const padding=document.querySelector('.padding');
+    const menu=document.querySelector('.menu');
+
+    toggle.addEventListener('click', () => {
+        toggle.classList.toggle('active');
+        display.classList.toggle('active');
+        padding.classList.toggle('active');
+        menu.classList.toggle('active');
+    })
+</script>
+
+</html>
